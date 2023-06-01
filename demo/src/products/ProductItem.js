@@ -1,3 +1,4 @@
+import StockLevel from '../tmp/StockLevel';
 import './ProductItem.css';
 
 export default function ProductItem({data}) {
@@ -11,6 +12,7 @@ export default function ProductItem({data}) {
             <h3>{name}</h3>
             <p>Prix: {price} EUR</p>
             <p>En stock: {stock} - {onlineMsg}</p>
+            <StockLevel stock={stock} />
         </div>
     )
 }
