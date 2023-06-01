@@ -9,3 +9,5 @@ Ce composant affichera par défaut le paragraphe suivant:
 Une propriété "limit" prise en entrée par le composant permettra de limiter la longueur
 du paragraphe affiché.
 Par exemple, si limit vaut 10, le texte du paragraphe sera "Lorem ipsu"
+
+Tip: les chaînes de caractères JavaScript dispose de la méthode .substr renvoyant une portion de chaîne

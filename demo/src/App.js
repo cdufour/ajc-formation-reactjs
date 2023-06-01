@@ -1,5 +1,6 @@
 import './App.css';
 import Counter from './Counter'
+import Lorem from './Lorem';
 
 // composants fonctionnels
 function Simple() {
@@ -61,6 +62,8 @@ function App() {
       <Counter initialValue={0} />
 
       {/* composant Lorem ici */}
+      <Lorem />
+      <Lorem limit={10} />
     </div>
   );
 }
