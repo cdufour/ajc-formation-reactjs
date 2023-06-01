@@ -4,7 +4,7 @@ const COLORS = ['green', 'red', 'blue', 'pink', 'orange', 'black'];
 
 export default class Rainbow extends Component {
 
-    state = { color: 'blue' };
+    state = { color: 'blue', intervalId: null };
 
     constructor(props) {
         super(props);
@@ -13,10 +13,24 @@ export default class Rainbow extends Component {
     }
 
     startAnim() {
-        let intervalid = setInterval(
+        let intervalId = setInterval(
             () => { this.setState({ color: this.randomColor() }) },
             2000
         );
+        this.setState({ intervalId });
+    }
+
+    stopAnim() {
+        clearInterval(this.state.intervalId);
+        this.setState({ intervalId: null });
+    }
+
+    toggleAnim() {
+        if (!this.state.intervalId) {
+            this.startAnim();
+        } else {
+            this.stopAnim();
+        }
     }
 
     randomColor() {
@@ -28,7 +42,7 @@ export default class Rainbow extends Component {
         // composant déjà rendu (render() déjà exécutée)
         console.log("*** componentDidMount ***");
 
-        this.startAnim();
+        //this.startAnim();
     }
 
     componentWillUnmount() {
@@ -44,8 +58,19 @@ export default class Rainbow extends Component {
             backgroundColor: this.state.color
         };
 
+        let btnText = "On"; // texte par défaut
+
+        // changement du texte si animation en cours d'exécution
+        if (this.state.intervalId) {
+            btnText = "Off";
+        }
+        
+
         return (
-            <div style={style}></div>
+            <>
+                <div style={style}></div>
+                <button onClick={ () => this.toggleAnim() }>{btnText}</button>
+            </>
         )
     }
     

@@ -2,6 +2,7 @@ import './App.css';
 import Counter from './Counter'
 import Lorem from './exos/Lorem';
 import Rainbow from './Rainbow';
+import ProductList from './products/ProductList';
 
 // composants fonctionnels
 function Simple() {
@@ -68,6 +69,7 @@ function App() {
       <Lorem limit={50} />
 
       <Rainbow />
+      <ProductList />
 
     </div>
   );
