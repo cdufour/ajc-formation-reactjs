@@ -59,6 +59,8 @@ function App() {
       <Simple5 result="111 * 6" />
       <Simple5 result={111 * 6} />
       <Counter initialValue={0} />
+
+      {/* composant Lorem ici */}
     </div>
   );
 }
