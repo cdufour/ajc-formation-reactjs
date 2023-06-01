@@ -1,0 +1,11 @@
+.product {
+    border: 1px #eef1ed solid;
+    background-color: #eee;
+    margin-bottom: 20px;
+    padding: 4px 12px
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    color: #b33d66
+}
