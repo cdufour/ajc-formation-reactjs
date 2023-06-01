@@ -35,12 +35,19 @@ function App() {
 
   const title = "Formation ReactJs";
   const subtitle = "Initiation";
+  const style1 = { 
+    color: 'orange', 
+    'text-decoration': 'underline',
+    marginTop: '40px',
+    'margin-bottom': '50px'
+  };
 
 
   return (
     <div>
-      <h1>{ title }</h1>
+      <h1 style={style1}>{ title }</h1>
       <h2>{ subtitle }</h2>
+      <h2>Autre titre</h2>
 
       <Simple />
       <Simple2 propA="JavaScript" propB="débutant" />
@@ -52,7 +59,6 @@ function App() {
       <Simple5 result="111 * 6" />
       <Simple5 result={111 * 6} />
       <Counter initialValue={0} />
-      <Counter initialValue={5} />
     </div>
   );
 }
