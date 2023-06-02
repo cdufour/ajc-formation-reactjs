@@ -4,6 +4,7 @@ import Lorem from './exos/Lorem';
 import Rainbow from './Rainbow';
 import ProductList from './products/ProductList';
 
+
 // composants fonctionnels
 function Simple() {
   return <p>Simple composant fonctionnel</p>
@@ -74,6 +75,8 @@ function App() {
     */}
 
       <ProductList />
+
+
 
     </div>
   );
