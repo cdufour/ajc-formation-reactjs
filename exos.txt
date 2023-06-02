@@ -35,5 +35,6 @@ du composant ProductList
 
 
 Exo4 - Composant de classe "Slideshow"
-Recréer sous forme d'un composant React le slideshow dont
+Recréez sous forme d'un composant React le slideshow dont
 vous trouverez le code source ici: https://github.com/cdufour/ajc-formation-javascript/tree/master/slideshow
+Basez-vous sur la fonction "animation1()"
