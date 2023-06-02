@@ -25,3 +25,11 @@ Ce composant affichera un niveau de disponibilité d'un produit, sous forme, au 
     high (supérieur à 50), vert
 
 Faire de ce composant, un composant enfant du composant ProductItem
+
+
+Exo3 - ProductSearch: clear input
+Dans le composant ProductSearch, ajoutez un button "x" (clear)
+permettant de vider le champ de recherche
+La totalité des produits devra réapparaître au niveau
+du composant ProductList
+

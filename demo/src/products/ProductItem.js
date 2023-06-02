@@ -1,4 +1,4 @@
-import StockLevel from '../tmp/StockLevel';
+import StockLevel from './StockLevel';
 import './ProductItem.css';
 
 export default function ProductItem({data}) {

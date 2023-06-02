@@ -8,3 +8,4 @@
 
 ## Liens utiles
 - [How to write comments in React (JSX)?](https://www.wisdomgeek.com/development/web-development/react/how-to-write-comments-in-react-jsx/)
+- [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
