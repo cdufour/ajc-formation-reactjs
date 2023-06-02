@@ -1,4 +1,4 @@
-import StockLevel from './StockLevel';
+import StockLevel from '../exos/StockLevel';
 import './ProductItem.css';
 
 export default function ProductItem({data}) {

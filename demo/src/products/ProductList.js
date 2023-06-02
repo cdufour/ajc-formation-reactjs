@@ -18,6 +18,7 @@ export default class ProductList extends Component {
         // pour éviter qu'il référence un "mauvais" contexte.
         // pour plus d'info: https://github.com/getify/You-Dont-Know-JS
         this.onSearch = this.onSearch.bind(this);
+        this.onClear = this.onClear.bind(this);
     }
 
     componentDidMount() {
@@ -46,6 +47,11 @@ export default class ProductList extends Component {
         
     }
 
+    onClear() {
+        // on repart sur une liste complète des produits
+        this.setState({ filteredProducts: [...this.state.products] });
+    }
+
     render() {
 
         // const numbers = [1, 2, 3, 4, 5];
@@ -59,11 +65,11 @@ export default class ProductList extends Component {
         // )
 
         const items = this.state.filteredProducts
-            .map(product => <ProductItem data={product}  />)
+            .map(product => <ProductItem data={product} key={product.id}  />)
 
         return (
             <>
-                <ProductSearch onSearch={this.onSearch} />
+                <ProductSearch onSearch={this.onSearch} onClear={this.onClear} />
                 {items}
             </>
         )

@@ -40,9 +40,11 @@ function App() {
   const subtitle = "Initiation";
   const style1 = { 
     color: 'orange', 
-    'text-decoration': 'underline',
+    //'text-decoration': 'underline',
+    textDecoration: 'underline',
     marginTop: '40px',
-    'margin-bottom': '50px'
+    //'margin-bottom': '50px'
+    marginBottom: '50px'
   };
 
 
@@ -52,6 +54,7 @@ function App() {
       <h2>{ subtitle }</h2>
       <h2>Autre titre</h2>
 
+      {/*
       <Simple />
       <Simple2 propA="JavaScript" propB="débutant" />
       <Simple2 propA="ReactJs" propB="débutant" />
@@ -63,12 +66,13 @@ function App() {
       <Simple5 result={111 * 6} />
       <Counter initialValue={0} />
 
-      {/* composant Lorem ici */}
       <Lorem />
       <Lorem limit={10} />
       <Lorem limit={50} />
 
       <Rainbow />
+    */}
+
       <ProductList />
 
     </div>
