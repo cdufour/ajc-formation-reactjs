@@ -3,6 +3,7 @@ import Counter from './Counter'
 import Lorem from './exos/Lorem';
 import Rainbow from './Rainbow';
 import ProductList from './products/ProductList';
+import Slideshow from './exos/Slideshow';
 
 
 // composants fonctionnels
@@ -66,18 +67,14 @@ function App() {
       <Simple5 result="111 * 6" />
       <Simple5 result={111 * 6} />
       <Counter initialValue={0} />
-
       <Lorem />
       <Lorem limit={10} />
       <Lorem limit={50} />
-
       <Rainbow />
-    */}
-
       <ProductList />
+      */}
 
-
-
+      <Slideshow />
     </div>
   );
 }
